@@ -1,0 +1,14 @@
+<tr
+	<% if user.attend %>
+		class="success"
+	<% else %>
+		class="error"
+	<% end %>
+>
+	<%= form_for(user) do |f| %>
+		<td><%= f.check_box :attend %></td>
+		<td><%= user.name %></td>              
+		<td><%= f.text_field :comment %></td>
+		<td><%= f.submit "Speichern", :class=>"btn btn-primary btn-small" %>
+	<% end %>
+</tr>

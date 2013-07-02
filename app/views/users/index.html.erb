@@ -1,0 +1,22 @@
+<h4>Teilnehmer</h4>
+<div class="well">
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= link_to 'Entfernen', user, method: :delete, data: { confirm: 'Soll der Teilnehmer wirklch entfernt werden?' } %></td>
+      </tr>
+    <% end %>
+  </table>
+
+  <br />
+
+  <%= link_to 'Neuer Teilnehmer', new_user_path, :class => "btn btn-primary" %>
+</div>

@@ -1,0 +1,52 @@
+<div class="well">
+  <%= form_for(@training) do |f| %>
+    <% if @training.errors.any? %>
+      <div id="error_explanation">
+        <h4><%= pluralize(@training.errors.count, "error") %> Fehler verhindern das Speichern:</h4>
+        <ul>
+          <% @training.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="clearfix">
+      <%= f.label "Beginn:" %>
+      <div class="input">
+
+        <div id="datetimepicker1" class="input-append date">
+          <input data-format="dd.MM.yyyy hh:mm" id="start" name="training[start]" size="30" type="text">
+          <span class="add-on">
+            <i data-time-icon="icon-time" data-date-icon="icon-calendar" class="icon-calendar"></i>
+          </span>
+        </div>
+        <!--div id="datetimepicker1" class="input-append date">
+          <%= f.text_field :start, {:id => "start", :data => {:format=>" hh:mm dd.MM.yyyy"}} -%>
+          <span class="add-on">
+            <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+          </span>
+        </div-->
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <%= f.label "Kommentar:" %>
+      <div class="input">
+        <%= f.text_area :comment, :rows => "5", :cols => "70" %>
+      </div>
+    </div>
+
+    <%= f.submit "Speichern", :class=>"btn btn-primary" %>
+  </div>
+<% end %>
+
+<script  type="text/javascript">
+$(function() {
+    $('.date').datetimepicker({
+      language: 'de-DE',
+      pickSeconds: false,   
+    });
+    $('#start').setLocalDate(new Date());
+  });
+</script>

@@ -1,0 +1,26 @@
+<h4>Teilnahme Training am <%= @training.start.strftime("%d.%m.%Y") %> um <%=@training.start.strftime("%H:%M") %> Uhr</h4>
+
+<div class="well well-small">
+  <b>Kommentar:</b> <%= @training.comment %>
+</div>
+
+<div class="well">
+<table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th class="header">Teilnahme</th>
+        <th class="header">Name</th>        
+        <th class="header">Kommentar</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% @users.each do |user| %>
+          <%= render partial: 'user_form', :locals => { :user => user } %>
+        <% end %>
+    </tbody>
+</table>
+</div>
+
+<div class="well well-small">
+  Zusagen: <%= @attendees.to_s %>
+</div>

@@ -1,0 +1,25 @@
+
+<%= form_for(@user) do |f| %>
+  <div class="modal-body">    
+    <% if @user.errors.any? %>
+      <div id="error_explanation">
+        <h5><%= pluralize(@user.errors.count, "error") %> Fehler verhindern das Speichern:</h5>
+        <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="clearfix">
+      <%= f.label "Name:" %>
+      <div class="input">
+        <%= f.text_field :name %>
+      </div>
+    </div>
+    <%= f.submit "Speichern", :class=>"btn btn-primary" %>
+  </div>
+  
+  <% end %>
+
