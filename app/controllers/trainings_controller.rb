@@ -1,8 +1,8 @@
 class TrainingsController < ApplicationController
   def index
     @training = Training.first
-    @users = User.find(:all, :order => "name asc")
-    @attendees = User.find_all_by_attend(true).size
+    @users = User.all.order(:name)
+    @attendees = User.where(attend: true).size
     if @training.nil? 
       redirect_to action: 'new'
     end

@@ -311,6 +311,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/application.rb",
+			"settings":
+			{
+				"buffer_size": 981,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/trainings_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1241,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 82,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
@@ -589,8 +621,125 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1117,
+								1117
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 210.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/application.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/trainings_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								298,
+								298
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/application_controller.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 82,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -628,6 +777,10 @@
 	"output.exec":
 	{
 		"height": 357.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
 	},
 	"project": "volleyball.sublime-project",
 	"replace":
